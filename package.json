@@ -1,0 +1,59 @@
+{
+  "name": "@tager/web-modules",
+  "version": "0.1.0",
+  "author": "Ivan Saranchonkau",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "umd:main": "dist/web-modules.umd.production.js",
+  "module": "dist/web-modules.esm.js",
+  "typings": "dist/main.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "cross-env NODE_ENV=production tsdx build --format=cjs,esm,umd --entry ./src/main.ts",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prebuild": "rimraf dist",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+    "@tager/web-components": "^0.1.8",
+    "@tager/web-core": "^0.1.7",
+    "next": "^9.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "12.x",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "cross-env": "^7.0.2",
+    "husky": "^4.2.5",
+    "rimraf": "^3.0.2",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "next": "^9.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint --fix",
+      "post-commit": "git update-index --again"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "resolutions": {
+    "prettier": "^2.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
