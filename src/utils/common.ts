@@ -1,5 +1,5 @@
 import React from 'react';
-import { FETCH_STATUSES, Nullish, ResourceType } from '@tager/web-core';
+import { Nullish } from '@tager/web-core';
 import { Page, PictureImageType, PictureProps } from '@tager/web-components';
 
 import {
@@ -60,14 +60,4 @@ export function convertThumbnailToPictureImage(
     webp: image.url_webp,
     webp2x: image.url_webp_2x,
   };
-}
-
-export function shouldGetResourceDataFromCache(
-  resource: ResourceType<unknown>,
-  shouldInvalidate: Nullish<boolean>
-): boolean {
-  const isLoading = resource.status === FETCH_STATUSES.LOADING;
-  const isInvalidatingNeeded =
-    resource.status === FETCH_STATUSES.SUCCESS && shouldInvalidate;
-  return isInvalidatingNeeded || isLoading;
 }
