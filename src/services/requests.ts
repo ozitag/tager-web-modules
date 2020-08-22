@@ -40,7 +40,7 @@ export function getBannerListByAlias(
 export function getMenuItemListByAlias(
   menuAlias: string
 ): Promise<ResponseBody<Array<MenuItemType>>> {
-  return request.get({ path: `/tager/menu/${menuAlias}` });
+  return request.get({ path: `/tager/menus/${menuAlias}` });
 }
 
 /** Pages */
