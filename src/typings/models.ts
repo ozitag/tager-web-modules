@@ -5,15 +5,16 @@ import { Nullable } from '@tager/web-core';
  * https://github.com/Ozerich/laravel-filestorage-db/blob/0.3.8/src/Models/File.php#L144-L174
  */
 export type ThumbnailType = {
-  url: Nullable<string>;
-  url_2x?: Nullable<string>;
-  url_webp?: Nullable<string>;
-  url_webp_2x?: Nullable<string>;
+  readonly url: Nullable<string>;
+  readonly url_2x?: Nullable<string>;
+  readonly url_webp?: Nullable<string>;
+  readonly url_webp_2x?: Nullable<string>;
 };
 
-export type ThumbnailMapType<Key extends string> = {
-  [key in Key]: Nullable<ThumbnailType>;
-};
+export type ResizedThumbnailType<
+  Size extends string,
+  ThumbnailField extends keyof ThumbnailType = keyof ThumbnailType
+> = { readonly [key in Size]: Nullable<Pick<ThumbnailType, ThumbnailField>> };
 
 /** Seo */
 
@@ -22,12 +23,12 @@ export type ThumbnailMapType<Key extends string> = {
  * https://github.com/ozitag/tager-backend-seo/blob/1.3.1/src/Resources/SeoParamsResource.php#L35-L53
  */
 export type SeoParamsType = {
-  title: Nullable<string>;
-  description: Nullable<string>;
-  openGraph: {
-    title: Nullable<string>;
-    description: Nullable<string>;
-    image: Nullable<string>;
+  readonly title: Nullable<string>;
+  readonly description: Nullable<string>;
+  readonly openGraph: {
+    readonly title: Nullable<string>;
+    readonly description: Nullable<string>;
+    readonly image: Nullable<string>;
   };
 };
 
@@ -38,13 +39,13 @@ export type SeoParamsType = {
  * https://github.com/ozitag/tager-backend-banners/blob/1.4.2/src/Resources/BannerPublicResource.php
  */
 export type BannerType = {
-  id: number;
-  title: Nullable<string>;
-  text: Nullable<string>;
-  image: Nullable<ThumbnailType>;
-  buttonLabel: Nullable<string>;
-  buttonLink: Nullable<string>;
-  buttonIsNewTab: boolean;
+  readonly id: number;
+  readonly title: Nullable<string>;
+  readonly text: Nullable<string>;
+  readonly image: Nullable<ThumbnailType>;
+  readonly buttonLabel: Nullable<string>;
+  readonly buttonLink: Nullable<string>;
+  readonly buttonIsNewTab: boolean;
 };
 
 /** Menus */
@@ -54,11 +55,11 @@ export type BannerType = {
  * https://github.com/ozitag/tager-backend-menus/blob/1.2/src/Jobs/GetMenuItemsTreeJob.php#L27-L33
  */
 export type MenuItemType = {
-  id: number;
-  label: string;
-  link: Nullable<string>;
-  isNewTab: boolean;
-  children: Array<MenuItemType>;
+  readonly id: number;
+  readonly label: string;
+  readonly link: Nullable<string>;
+  readonly isNewTab: boolean;
+  readonly children: Array<MenuItemType>;
 };
 
 /** Settings */
@@ -68,8 +69,8 @@ export type MenuItemType = {
  * https://github.com/ozitag/tager-backend-settings/blob/1.5.3/src/Features/ViewSettingsFeature.php#L23-L26
  */
 export interface SettingsItemCommon<Key extends string = string> {
-  key: Key;
-  value: any;
+  readonly key: Key;
+  readonly value: any;
 }
 
 export interface SettingsItemString<Key extends string>
@@ -99,9 +100,9 @@ export interface SettingsItemGallery<Key extends string>
  * https://github.com/ozitag/tager-backend-pages/blob/1.1.4/src/Resources/PageResource.php
  */
 export type PageShortType = {
-  id: number;
-  path: string;
-  template: Nullable<string>;
+  readonly id: number;
+  readonly path: string;
+  readonly template: Nullable<string>;
 };
 
 /**
@@ -109,9 +110,9 @@ export type PageShortType = {
  * https://github.com/ozitag/tager-backend-pages/blob/1.1.4/src/Resources/PageFullResource.php#L30-L34
  */
 export type PageParentType = {
-  id: number;
-  title: string;
-  path: string;
+  readonly id: number;
+  readonly title: string;
+  readonly path: string;
 };
 
 /**
@@ -119,14 +120,14 @@ export type PageParentType = {
  * https://github.com/ozitag/tager-backend-pages/blob/1.1.4/src/Resources/PageFullResource.php
  */
 export interface PageFullType {
-  id: number;
-  title: string;
-  path: string;
-  parent: Nullable<PageParentType>;
-  image: Nullable<ThumbnailType>;
-  excerpt: Nullable<string>;
-  body: Nullable<string>;
-  seoParams: SeoParamsType;
-  template: Nullable<string>;
-  templateFields: Nullable<Record<string, any>>;
+  readonly id: number;
+  readonly title: string;
+  readonly path: string;
+  readonly parent: Nullable<PageParentType>;
+  readonly image: Nullable<ThumbnailType>;
+  readonly excerpt: Nullable<string>;
+  readonly body: Nullable<string>;
+  readonly seoParams: SeoParamsType;
+  readonly template: Nullable<string>;
+  readonly templateFields: Nullable<Record<string, any>>;
 }
