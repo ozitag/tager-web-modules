@@ -52,5 +52,5 @@ export function getPageList(): Promise<ResponseBody<Array<PageShortType>>> {
 export function getPageByPath<Page extends PageFullType = PageFullType>(
   pagePath: string
 ): Promise<ResponseBody<Page>> {
-  return request.get({ path: `/tager/pages/view?path=${pagePath}` });
+  return request.get({ path: `/tager/pages/view`, params: { path: pagePath } });
 }
