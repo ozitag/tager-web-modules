@@ -25,6 +25,7 @@ export type ResizedThumbnailType<
 export type SeoParamsType = {
   readonly title: Nullable<string>;
   readonly description: Nullable<string>;
+  readonly keywords: Nullable<string>;
   readonly openGraph: {
     readonly title: Nullable<string>;
     readonly description: Nullable<string>;

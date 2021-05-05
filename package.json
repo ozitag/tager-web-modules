@@ -1,6 +1,6 @@
 {
   "name": "@tager/web-modules",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "Ivan Saranchonkau",
   "license": "MIT",
   "main": "dist/index.js",
@@ -23,8 +23,8 @@
     "prepare": "yarn build"
   },
   "devDependencies": {
-    "@tager/web-components": "^0.2.1",
-    "@tager/web-core": "^0.3.2",
+    "@tager/web-components": "^0.3.10",
+    "@tager/web-core": "^0.3.12",
     "@types/node": "12.x",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
@@ -36,8 +36,8 @@
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
-    "@tager/web-components": "^0.2.1",
-    "@tager/web-core": "^0.3.2"
+    "@tager/web-components": "^0.3.10",
+    "@tager/web-core": "^0.3.12"
   },
   "husky": {
     "hooks": {

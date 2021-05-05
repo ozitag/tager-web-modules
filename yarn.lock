@@ -1125,23 +1125,24 @@
   dependencies:
     type-detect "4.0.8"
 
-"@tager/web-components@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@tager/web-components/-/web-components-0.2.1.tgz#17c53d8fd2e9d09027b6c869eff59b930ebca0b3"
-  integrity sha512-r5HtT4hpL0RNupJFZH4DK+IwrrTBQ/KI7S3l0RVqAh4bbAj369VpWbGMGBzfsGrLAA1Ndrg/qZSPFiOlJ4ohrQ==
+"@tager/web-components@^0.3.10":
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/@tager/web-components/-/web-components-0.3.10.tgz#2b299e17db6b5a097b6f8cc662760bc7999b03a7"
+  integrity sha512-Y9efW0bMPr4dQGelnEOL4wjpZ/adazxtJ9l19EdOUU/b19YVHJmIogdOvYdu6kA6q/5+qe5bh6oTcAcyDYYAxA==
 
-"@tager/web-core@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@tager/web-core/-/web-core-0.3.2.tgz#e672ff114c0c353bc971de2c90136050835223a2"
-  integrity sha512-jR6AGperNr1EEURZh0+KT61/ZfTyeRFrIdpzxrIDA8L2D9hS0b1oZfyXnN1BJ6EsRlSHMgHnV/Xog9zDc7cAnw==
+"@tager/web-core@^0.3.12":
+  version "0.3.12"
+  resolved "https://registry.yarnpkg.com/@tager/web-core/-/web-core-0.3.12.tgz#8e3099b179f048f208a545676da2327907fb8e93"
+  integrity sha512-3oS89no69rkk8as4WGSrEGTLo2gL7N6VsrbwJEr5IWnf49AdQEKHqzIq+pa7fZ9fvnak/vPpnRlqRNsYnvO8vw==
   dependencies:
     cookie "^0.4.1"
-    js-cookie "^3.0.0-rc.0"
+    js-cookie "^3.0.0-rc.1"
     lodash "^4.17.20"
     lodash-es "^4.17.15"
     nprogress "^0.2.0"
     tua-body-scroll-lock "^1.2.0"
     typed-contracts "^2.3.0"
+    uuid "^8.3.2"
 
 "@types/babel__core@^7.1.7":
   version "7.1.10"
@@ -3876,7 +3877,7 @@ jpjs@^1.2.1:
   resolved "https://registry.yarnpkg.com/jpjs/-/jpjs-1.2.1.tgz#f343833de8838a5beba1f42d5a219be0114c44b7"
   integrity sha512-GxJWybWU4NV0RNKi6EIqk6IRPOTqd/h+U7sbtyuD7yUISUzV78LdHnq2xkevJsTlz/EImux4sWj+wfMiwKLkiw==
 
-js-cookie@^3.0.0-rc.0:
+js-cookie@^3.0.0-rc.1:
   version "3.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.0-rc.1.tgz#20f31aa587434855a2b8394542ba38d9f84a3889"
   integrity sha512-UG5OeBDTwBLXm+d7djWjQ+AzZXeRHbQ04Wk1uWYG1BdsmTZa0ET4E3DF5yRF+4U0yv+2N80Bg22DcjVcWidMqA==
@@ -6014,6 +6015,11 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3:
   version "2.1.1"
