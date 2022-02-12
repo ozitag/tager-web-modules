@@ -17,9 +17,7 @@ export function convertSeoParamsToPageProps(
     title: seoData?.title,
     description: seoData?.description,
     keywords: seoData?.keywords,
-    openGraphTitle: seoData?.openGraph.title,
-    openGraphDescription: seoData?.openGraph.description,
-    openGraphImage: seoData?.openGraph.image,
+    openGraphImage: seoData?.openGraphImage,
   };
 }
 

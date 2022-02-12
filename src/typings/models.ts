@@ -26,11 +26,7 @@ export type SeoParamsType = {
   readonly title: Nullable<string>;
   readonly description: Nullable<string>;
   readonly keywords: Nullable<string>;
-  readonly openGraph: {
-    readonly title: Nullable<string>;
-    readonly description: Nullable<string>;
-    readonly image: Nullable<string>;
-  };
+  readonly openGraphImage: Nullable<string>;
 };
 
 /** Banners */
@@ -116,6 +112,11 @@ export type PageParentType = {
   readonly path: string;
 };
 
+export type PageTemplate = {
+  readonly name: Nullable<string>;
+  readonly fields: Nullable<Record<string, any>>;
+}
+
 /**
  * Reference:
  * https://github.com/ozitag/tager-backend-pages/blob/1.1.4/src/Resources/PageFullResource.php
@@ -128,7 +129,6 @@ export interface PageFullType {
   readonly image: Nullable<ThumbnailType>;
   readonly excerpt: Nullable<string>;
   readonly body: Nullable<string>;
+  readonly template: Nullable<PageTemplate>;
   readonly seoParams: SeoParamsType;
-  readonly template: Nullable<string>;
-  readonly templateFields: Nullable<Record<string, any>>;
 }
