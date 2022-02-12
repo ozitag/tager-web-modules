@@ -112,11 +112,6 @@ export type PageParentType = {
   readonly path: string;
 };
 
-export type PageTemplate = {
-  readonly name: Nullable<string>;
-  readonly fields: Nullable<Record<string, any>>;
-}
-
 /**
  * Reference:
  * https://github.com/ozitag/tager-backend-pages/blob/1.1.4/src/Resources/PageFullResource.php
@@ -129,6 +124,7 @@ export interface PageFullType {
   readonly image: Nullable<ThumbnailType>;
   readonly excerpt: Nullable<string>;
   readonly body: Nullable<string>;
-  readonly template: Nullable<PageTemplate>;
+  readonly template: Nullable<string>;
+  readonly templateFields: Nullable<Record<string, any>>;
   readonly seoParams: SeoParamsType;
 }
