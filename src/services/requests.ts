@@ -1,7 +1,6 @@
 import { request, ResponseBody } from '@tager/web-core';
 
 import {
-  BannerType,
   MenuItemType,
   PageFullType,
   PageShortType,
@@ -24,15 +23,7 @@ export function getSettingItemList<
 export function getSeoParamsByAlias(
   alias: string
 ): Promise<ResponseBody<SeoParamsType>> {
-  return request.get({ path: `/tager/seo/${alias}` });
-}
-
-/** Banners */
-
-export function getBannerListByAlias(
-  bannerAlias: string
-): Promise<ResponseBody<Array<BannerType>>> {
-  return request.get({ path: `/tager/market-boards/${bannerAlias}` });
+  return request.get({ path: `/tager/seo/template/${alias}` });
 }
 
 /** Menus */

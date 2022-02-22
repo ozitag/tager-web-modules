@@ -29,22 +29,6 @@ export type SeoParamsType = {
   readonly openGraphImage: Nullable<string>;
 };
 
-/** Banners */
-
-/**
- * Reference:
- * https://github.com/ozitag/tager-backend-banners/blob/1.4.2/src/Resources/BannerPublicResource.php
- */
-export type BannerType = {
-  readonly id: number;
-  readonly title: Nullable<string>;
-  readonly text: Nullable<string>;
-  readonly image: Nullable<ThumbnailType>;
-  readonly buttonLabel: Nullable<string>;
-  readonly buttonLink: Nullable<string>;
-  readonly buttonIsNewTab: boolean;
-};
-
 /** Menus */
 
 /**
