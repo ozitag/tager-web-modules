@@ -1125,23 +1125,27 @@
   dependencies:
     type-detect "4.0.8"
 
-"@tager/web-components@^0.3.10":
-  version "0.3.10"
-  resolved "https://registry.yarnpkg.com/@tager/web-components/-/web-components-0.3.10.tgz#2b299e17db6b5a097b6f8cc662760bc7999b03a7"
-  integrity sha512-Y9efW0bMPr4dQGelnEOL4wjpZ/adazxtJ9l19EdOUU/b19YVHJmIogdOvYdu6kA6q/5+qe5bh6oTcAcyDYYAxA==
+"@tager/web-components@^0.4.18":
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/@tager/web-components/-/web-components-0.4.18.tgz#dbf04260e205aa17214976dd5099e9da002daf65"
+  integrity sha512-+y//r1fEHkvcjOVjFnTZ4oLfR5tsBpQsPLfraUcfvkz4lG/oH0auNflqBNCE7scTRrxIp5XqyGMrOuV7/7Gcig==
+  dependencies:
+    "@types/node" "16.x"
+    http-status-codes "^2.2.0"
 
-"@tager/web-core@^0.3.12":
-  version "0.3.12"
-  resolved "https://registry.yarnpkg.com/@tager/web-core/-/web-core-0.3.12.tgz#8e3099b179f048f208a545676da2327907fb8e93"
-  integrity sha512-3oS89no69rkk8as4WGSrEGTLo2gL7N6VsrbwJEr5IWnf49AdQEKHqzIq+pa7fZ9fvnak/vPpnRlqRNsYnvO8vw==
+"@tager/web-core@^0.3.33":
+  version "0.3.33"
+  resolved "https://registry.yarnpkg.com/@tager/web-core/-/web-core-0.3.33.tgz#a0c5b0dd01a1a359e38c55420571e5f2d38ec37c"
+  integrity sha512-6jy2TPgdZA6TWAcbKOcGTzPx3lZYWsQh3EgUWOHwaSei62Bi2sL7y3at35+LODuDJFNt6bowRF3mJaxHxaoBWw==
   dependencies:
     cookie "^0.4.1"
-    js-cookie "^3.0.0-rc.1"
-    lodash "^4.17.20"
-    lodash-es "^4.17.15"
+    form-data "^4.0.0"
+    js-cookie "3.0.1"
+    lodash "^4.17.21"
+    lodash-es "^4.17.21"
     nprogress "^0.2.0"
-    tua-body-scroll-lock "^1.2.0"
-    typed-contracts "^2.3.0"
+    tua-body-scroll-lock "^1.2.1"
+    typed-contracts "^3.0.0"
     uuid "^8.3.2"
 
 "@types/babel__core@^7.1.7":
@@ -1981,7 +1985,7 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-combined-stream@^1.0.6, combined-stream@~1.0.6:
+combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
   integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
@@ -2052,11 +2056,6 @@ core-js-pure@^3.0.0:
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.6.5.tgz#c79e75f5e38dbc85a662d91eea52b8256d53b813"
   integrity sha512-lacdXOimsiD0QyNf9BC/mxivNJ/ybBGJXQFKzRekp1WTHoVUWsUHEn+2T8GJAzzIhyOuXA+gOxCVN3l+5PLPUA==
-
-core-js@^3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
-  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -2854,6 +2853,15 @@ forever-agent@~0.6.1:
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
 
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
 form-data@~2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"
@@ -3097,6 +3105,11 @@ http-signature@~1.2.0:
     assert-plus "^1.0.0"
     jsprim "^1.2.2"
     sshpk "^1.7.0"
+
+http-status-codes@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/http-status-codes/-/http-status-codes-2.2.0.tgz#bb2efe63d941dfc2be18e15f703da525169622be"
+  integrity sha512-feERVo9iWxvnejp3SEfm/+oNG517npqL2/PIA8ORjyOZjGC7TwCRQsZylciLS64i6pJ0wRYz3rkXLRwbtFa8Ng==
 
 human-signals@^1.1.1:
   version "1.1.1"
@@ -3877,10 +3890,10 @@ jpjs@^1.2.1:
   resolved "https://registry.yarnpkg.com/jpjs/-/jpjs-1.2.1.tgz#f343833de8838a5beba1f42d5a219be0114c44b7"
   integrity sha512-GxJWybWU4NV0RNKi6EIqk6IRPOTqd/h+U7sbtyuD7yUISUzV78LdHnq2xkevJsTlz/EImux4sWj+wfMiwKLkiw==
 
-js-cookie@^3.0.0-rc.1:
-  version "3.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.0-rc.1.tgz#20f31aa587434855a2b8394542ba38d9f84a3889"
-  integrity sha512-UG5OeBDTwBLXm+d7djWjQ+AzZXeRHbQ04Wk1uWYG1BdsmTZa0ET4E3DF5yRF+4U0yv+2N80Bg22DcjVcWidMqA==
+js-cookie@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
+  integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -4106,10 +4119,10 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash-es@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
-  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -4131,10 +4144,15 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20:
+lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^3.0.0:
   version "3.0.0"
@@ -5880,10 +5898,10 @@ tsutils@^3.17.1:
   dependencies:
     tslib "^1.8.1"
 
-tua-body-scroll-lock@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/tua-body-scroll-lock/-/tua-body-scroll-lock-1.2.0.tgz#4bfd133f675058fdc59d44eb2e9439f31a24f2c9"
-  integrity sha512-+hxsEHbVBxcoM6utIp1aSi78mkW6PJgrHH/eFIqVKzkULcPBseH+OG0+5wWdiYA4+67A53enpNkxHMJVUuYibA==
+tua-body-scroll-lock@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/tua-body-scroll-lock/-/tua-body-scroll-lock-1.2.1.tgz#a45b428a61ff41e7cccded11c2095d44ac02536e"
+  integrity sha512-DuGbQxIBSbz7/aAwh0oMThOwCwDdYzsU8nF5XQPAvoeOBWp/qhjrZfOtc84gj6CQLZu5L1+TgMNX6fW3OuafHA==
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
@@ -5924,12 +5942,10 @@ type-fest@^0.8.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
-typed-contracts@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/typed-contracts/-/typed-contracts-2.3.0.tgz#97c9fa03c37ac0294769f5f815c7d34d3dd6a3f3"
-  integrity sha512-ySdcDiGcCzO4ymhub98B2kwu1DAQ4WvZM2SCjFVEAkZgEBked2X3mz6YRahNcgULn989/hizbuOqaNgEw6E5XQ==
-  dependencies:
-    core-js "^3.6.5"
+typed-contracts@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/typed-contracts/-/typed-contracts-3.0.0.tgz#a1e5f8b06b35c4fdee3635e1097b93febaf07a16"
+  integrity sha512-Crw4cKiPBulqy2YFfCMU3OaudtDPeEDwbkbYj6mI2XZA2wt3iGBvxvMobESW9t73+hlIpwe/4i63M+BzkprW+g==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
