@@ -18,6 +18,7 @@ export function convertSeoParamsToPageProps(
         description: seoData?.description,
         keywords: seoData?.keywords,
         openGraphImage: seoData?.openGraphImage,
+        hiddenFromSeoIndexation: seoData?.hiddenFromSeoIndexation || false
     };
 }
 

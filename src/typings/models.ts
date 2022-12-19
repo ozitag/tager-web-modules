@@ -27,6 +27,7 @@ export type SeoParamsType = {
   readonly description: Nullable<string>;
   readonly keywords: Nullable<string>;
   readonly openGraphImage: Nullable<string>;
+  readonly hiddenFromSeoIndexation: boolean;
 };
 
 /** Menus */
